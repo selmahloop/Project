@@ -37,6 +37,7 @@ describe('Api tests',()=>{
     it('Delete user',()=>{
         cy.request('DELETE', Cypress.env('apiUrl')+'/api/users/2').then(response =>{
             expect(response.status).to.eq(204)
+            //test
 
         })
     })
