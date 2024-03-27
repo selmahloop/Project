@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-26T09:28:13.083Z",
+    "end": "2024-03-26T09:28:23.891Z",
+    "duration": 10808,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4a4d76b2-84f5-4d37-8a02-c7749fceee3b",
+      "title": "",
+      "fullFile": "cypress\\integration\\navigationTests.js",
+      "file": "cypress\\integration\\navigationTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "4d49f846-bacd-4c24-a8d1-8c8c994a0b78",
+          "title": "Links in new tab",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Navigation tests",
+              "fullTitle": "Links in new tab Navigation tests",
+              "timedOut": null,
+              "duration": 10708,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.ValidLogin();\n_navigationPage.navigateTo.goToTwitter();\n_navigationPage.navigateTo.goToFacebook();\n_navigationPage.navigateTo.goToLinkedin();",
+              "err": {},
+              "uuid": "a55b2921-5d63-490d-b439-68b044fd7817",
+              "parentUUID": "4d49f846-bacd-4c24-a8d1-8c8c994a0b78",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "a55b2921-5d63-490d-b439-68b044fd7817"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 10708,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

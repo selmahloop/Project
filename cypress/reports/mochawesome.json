@@ -1,0 +1,181 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-03-25T15:03:55.802Z",
+    "end": "2024-03-25T15:04:07.045Z",
+    "duration": 11243,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "9ce4524c-4112-43b0-96ed-562c47de3b03",
+      "title": "",
+      "fullFile": "cypress\\integration\\homeTests.js",
+      "file": "cypress\\integration\\homeTests.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f0250184-032f-437b-9cac-0ee3bbf4ca32",
+          "title": "Home page tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Products are sorted correctly",
+              "fullTitle": "Home page tests Products are sorted correctly",
+              "timedOut": null,
+              "duration": 2593,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "var username = 'standard_user';\nvar password = 'secret_sauce';\n_loginPage.loginPage.validFillLoginForm(username, password);\n_homePage.homePage.checkIfProductsAreSorted();",
+              "err": {},
+              "uuid": "054d27f0-c19c-4665-96b2-bd8dde712ebb",
+              "parentUUID": "f0250184-032f-437b-9cac-0ee3bbf4ca32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Numbers of products",
+              "fullTitle": "Home page tests Numbers of products",
+              "timedOut": null,
+              "duration": 1066,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.ValidLogin();\n_homePage.homePage.checkNumberOfProducts();",
+              "err": {},
+              "uuid": "254ed0a2-4d23-484b-9ce7-b8b23364c05e",
+              "parentUUID": "f0250184-032f-437b-9cac-0ee3bbf4ca32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Names of products",
+              "fullTitle": "Home page tests Names of products",
+              "timedOut": null,
+              "duration": 939,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.ValidLogin();\n_homePage.homePage.checkNamesOfProductsInTxtFile();",
+              "err": {},
+              "uuid": "f4528f77-3090-4f5e-b3bd-89656d458334",
+              "parentUUID": "f0250184-032f-437b-9cac-0ee3bbf4ca32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add to cart all items",
+              "fullTitle": "Home page tests Add to cart all items",
+              "timedOut": null,
+              "duration": 3140,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.ValidLogin(); //loginPage.checkIfProductsAreSorted()\n_homePage.homePage.addToCartAllProducts();\n_homePage.homePage.checkProductNamesInCart();\n_homePage.homePage.checkOutCart();\n_homePage.homePage.checkPricesInCartAndFinish();",
+              "err": {},
+              "uuid": "6d9be026-3c12-49a8-9c73-6f09cd80a2d0",
+              "parentUUID": "f0250184-032f-437b-9cac-0ee3bbf4ca32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Remove items from cart",
+              "fullTitle": "Home page tests Remove items from cart",
+              "timedOut": null,
+              "duration": 3464,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.ValidLogin();\n_homePage.homePage.addToCartAllProducts();\n_homePage.homePage.removeProductsFromCart();\n_homePage.homePage.checkOutCart();\n_homePage.homePage.checkIsPriceZero();",
+              "err": {},
+              "uuid": "1097006c-33f5-4c54-bd5d-5bae56450c2c",
+              "parentUUID": "f0250184-032f-437b-9cac-0ee3bbf4ca32",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "054d27f0-c19c-4665-96b2-bd8dde712ebb",
+            "254ed0a2-4d23-484b-9ce7-b8b23364c05e",
+            "f4528f77-3090-4f5e-b3bd-89656d458334",
+            "6d9be026-3c12-49a8-9c73-6f09cd80a2d0",
+            "1097006c-33f5-4c54-bd5d-5bae56450c2c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11202,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": true,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

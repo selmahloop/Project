@@ -1,0 +1,14 @@
+{
+    "baseUrl":"https://www.saucedemo.com/",
+    "chromeWebSecurity": false,
+    "env":{
+            "apiUrl":"https://reqres.in"
+    },
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/reports",
+        "overwrite": false, 
+        "html": true, 
+        "json": true
+  }
+}

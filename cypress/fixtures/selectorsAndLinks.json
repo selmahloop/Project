@@ -1,0 +1,4 @@
+{    
+    "selectors": [".social_twitter a", ".social_facebook a", ".social_linkedin a"],
+    "links":["twitter.com/saucelabs", "https://www.facebook.com/saucelabs", "https://www.linkedin.com/company/sauce-labs/"]
+}
